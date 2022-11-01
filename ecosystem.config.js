@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'app',
+      name: 'nest-website-strapi',
       script: 'npm',
       args: 'start',
     },
