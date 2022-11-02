@@ -4,7 +4,8 @@
   "info": {
     "singularName": "roundtable",
     "pluralName": "roundtables",
-    "displayName": "roundtable"
+    "displayName": "roundtable",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,18 @@
       "type": "string"
     },
     "invited_user_icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "blog_link": {
+      "type": "string"
     }
   }
 }
