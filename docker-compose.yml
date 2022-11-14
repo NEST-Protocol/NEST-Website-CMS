@@ -64,6 +64,7 @@ services:
 
 volumes:
   strapi-data:
+  strapi-redis:
 
 networks:
   strapi:
