@@ -33,7 +33,6 @@ services:
 
   strapiDB:
     container_name: strapiDB
-    platform: linux/amd64
     restart: unless-stopped
     env_file: .env
     image: mysql:5.7
@@ -52,7 +51,6 @@ services:
 
   strapiRedis:
     container_name: strapiRedis
-    platform: linux/amd64
     restart: unless-stopped
     env_file: .env
     image: redis:alpine
