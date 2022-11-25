@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nest_prize_configs",
+  "info": {
+    "singularName": "nest-prize-config",
+    "pluralName": "nest-prize-configs",
+    "displayName": "NEST_prize_config"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "challenges": {
+      "type": "json"
+    },
+    "max": {
+      "type": "float",
+      "required": true
+    },
+    "min": {
+      "type": "float",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "pending",
+        "processing",
+        "closed"
+      ],
+      "default": "open",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "quantity": {
+      "type": "biginteger"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

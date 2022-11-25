@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nest_invite_relationships",
+  "info": {
+    "singularName": "nest-invite-relationship",
+    "pluralName": "nest-invite-relationships",
+    "displayName": "NEST_invite_relationship"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nest_prize_config": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nest-prize-config.nest-prize-config"
+    },
+    "userA": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nest-prize-user.nest-prize-user"
+    },
+    "userB": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nest-prize-user.nest-prize-user"
+    }
+  }
+}
