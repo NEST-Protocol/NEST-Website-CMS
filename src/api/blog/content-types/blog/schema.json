@@ -29,6 +29,16 @@
       "relation": "manyToOne",
       "target": "api::blog-category.blog-category",
       "inversedBy": "blogs"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_categories",
+  "info": {
+    "singularName": "partner-category",
+    "pluralName": "partner-categories",
+    "displayName": "PartnerCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sidebar_position": {
+      "type": "integer"
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner",
+      "mappedBy": "category"
+    }
+  }
+}
