@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "blogs",
+  "collectionName": "docs",
   "info": {
-    "singularName": "blog",
-    "pluralName": "blogs",
-    "displayName": "Blog",
+    "singularName": "doc",
+    "pluralName": "docs",
+    "displayName": "Doc",
     "description": ""
   },
   "options": {
@@ -12,23 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
     "title": {
       "type": "string"
     },
     "content": {
       "type": "richtext"
     },
-    "date": {
-      "type": "date"
-    },
-    "slug": {
-      "type": "uid"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "api::blog-category.blog-category",
-      "inversedBy": "blogs"
+      "target": "api::doc-category.doc-category",
+      "inversedBy": "docs"
     }
   }
 }
