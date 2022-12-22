@@ -18,6 +18,9 @@
     "content": {
       "type": "richtext"
     },
+    "description": {
+      "type": "string"
+    },
     "date": {
       "type": "date"
     },
